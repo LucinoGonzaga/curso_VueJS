@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Vue - Aula 3 - Inputs e Data Binding</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="src/app.js" defer></script>
+</head>
+
+<body>
+    <p><b>Input e data binding</b></p>
+    <ul>
+        <li>
+            Uma das funcionalidade mais interessantes é o <b>data binding</b>;
+        </li>
+        <li>
+            Onde temos a possibilidade de <b>mudar em tempo real um dado</b>, por meio do que é recebido de um input,
+                por exemplo;
+        </li>
+        <li>
+            O Vue torna isso mais fácil ainda, <b>algumas linhas e pronto;</b>
+        </li>
+        <li>
+            Vamos ver o dadta binding na prática;</b>
+        </li>
+    <ul>
+    <div id="app">
+        <b>Exemplo:</b> 
+        <form id="app-form">
+            <input type="text" v-model="input_name" placeholder="Digite o seu nome">
+            <input type="submit" value="Enviar" v-on:click="submitForm">
+        </form>
+        <p>Meu nome é: {{ name }}</p>
+        <p>Data binding: {{ input_name }}</p>
+    </div>
+
+</bod
+</html>
