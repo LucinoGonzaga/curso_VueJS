@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Vue - Aula 4 - Utilizando o Vue CLI</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="src/app.js" defer></script>
+</head>
+
+<body>
+    <p><b>O CLI do Vue</b></p>
+    <ul>
+        <li>
+            O <b>CLI</b> é uma ferramenta de linha de comando do Vue;
+        </li>
+        <li>
+            Possibilita <b>criar e configurar</b> projetos de forma mais avançada;
+        </li>
+        <li>
+            <b>Por exemplo:</b> adicionar o Vue Router desde a instalação do projeto;</b>
+        </li>
+        <li>
+            Isso flexibiliza muito as coisas, vamos então instalar o Vue CLI e testar;</b>
+        </li>
+        <li>
+            Para realizar a instalação no Ubuntu 20: <b>sudo apt-get install nodejs</b>
+        </li>
+    <ul>
+    <div id="app">
+        <b>Exemplo:</b> 
+        <form id="app-form">
+            <input type="text" v-model="input_name" placeholder="Digite o seu nome">
+            <input type="submit" value="Enviar" v-on:click="submitForm">
+        </form>
+        <p>Meu nome é: {{ name }}</p>
+        <p>Data binding: {{ input_name }}</p>
+    </div>
+
+</bod
+</html>
