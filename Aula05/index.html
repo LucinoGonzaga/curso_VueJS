@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso Vue - Aula 4 - Utilizando o Vue CLI</title>
+    <title>Curso Vue - Aula 5 - Criando componentes</title>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="src/app.js" defer></script>
 </head>
@@ -29,5 +29,15 @@
             Para realizar a instalação no Ubuntu 20: <b>sudo apt-get install nodejs</b>
         </li>
     <ul>
-    </bod>
+    <div id="app">
+        <b>Exemplo:</b> 
+        <form id="app-form">
+            <input type="text" v-model="input_name" placeholder="Digite o seu nome">
+            <input type="submit" value="Enviar" v-on:click="submitForm">
+        </form>
+        <p>Meu nome é: {{ name }}</p>
+        <p>Data binding: {{ input_name }}</p>
+    </div>
+
+</bod
 </html>
